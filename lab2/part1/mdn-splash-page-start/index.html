@@ -112,9 +112,14 @@
 
     <main>
       <article>
-        <video controls width="400">
-          <source src="https://www.youtube.com/watch?v=ojcNcvb1olg" type="video/webm" controls/>
-        </video>
+        <iframe 
+        width="400"
+        height="250"
+        src="https://www.youtube.com/embed/ojcNcvb1olg?si=NaU6pHucum_xQak7"
+        frameborder="0"
+        allowfullscreen
+        alt="YouTube video">
+        </iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -125,23 +130,39 @@
 
       <div class="further-info">
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="./firefoxlogo120.png" alt="firefox logo" srcset="500" sizes="120">
+          <img 
+            srcset="./firefoxlogo120.png 120w, ./images/firefoxlogo400.png 400w" 
+            sizes="(max-width: 500px) 120px, 400px"
+            src="./images/firefoxlogo400.png" 
+            alt="firefox logo" />
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="./images/mozilladinosaurhead120.png" alt="mozilla dinosaur head" srcset="500=>" sizes="120">
+          <img 
+            srcset="./images/mozilladinosaurhead120.png 120w, ./images/mozilladinosaurhead400.png 400w" 
+            sizes="(max-width: 500px) 120px"
+            src="./images/mozilladinosaurhead400.png" 
+            alt="mozilla dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="./images/firefoxaddons120.jpg" alt="firefox addons" srcset="500=>" sizes="120">
+          <img 
+            srcset="./images/firefoxaddons120.jpg 120w, ./images/firefoxaddons400.jpg 400w" 
+            sizes="(max-width: 500px) 120px"
+            src="./images/firefoxaddons400.jpg" 
+            alt="firefox add-ons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="./originals/mdn.svg" alt="dinosaur head" srcset="500=>" sizes="120">
+          <img src="originals/mdn.svg" alt="dinosaur head">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <img src="./images/red-panda1200.jpg" alt="red panda"/>
+        <picture>
+          <source srcset="./images/red-panda600.jpg" media="(max-width: 600px)">
+          <img src="./images/red-panda1200.jpg" alt="a red panda">
+        </picture> 
       </div>
+      
 
     </main>
   </body>
