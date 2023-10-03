@@ -1,18 +1,19 @@
 <!--
 	Name: Yurim Lee
-	File: filename.html
+	File: lab2part1.html
 	Date: 22 September 2023
 	This is the Lab 2 - Part 1 page for Web Development - Fundamentals (INFT1206).
-	-->
+-->
 
+<!-- HTML5 doctype -->
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> <!-- Meta-data about this page -->
     <meta name="viewport" content="width=device-width">
-    <title>Mozilla splash page</title>
+    <title>Mozilla splash page</title> <!-- The page title -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <style>
+    <style> /* Embedded CSS */
       /* header and body setup */
 
       html {
@@ -107,7 +108,6 @@
     <header>
       <h1>Mozilla</h1>
       <img src="./firefoxlogo120.png" alt="firefox logo"/>
-
     </header>
 
     <main>
@@ -129,41 +129,39 @@
       </article>
 
       <div class="further-info">
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
+        <a href="https://www.mozilla.org/en-US/firefox/new/"> <!-- FireFox logo -->
           <img 
             srcset="./firefoxlogo120.png 120w, ./images/firefoxlogo400.png 400w" 
             sizes="(max-width: 500px) 120px, 400px"
             src="./images/firefoxlogo400.png" 
-            alt="firefox logo" />
+            alt="FireFox logo" />
         </a>
-        <a href="https://www.mozilla.org/">
+        <a href="https://www.mozilla.org/"> <!-- Mozilla dinosaur -->
           <img 
             srcset="./images/mozilladinosaurhead120.png 120w, ./images/mozilladinosaurhead400.png 400w" 
             sizes="(max-width: 500px) 120px"
             src="./images/mozilladinosaurhead400.png" 
-            alt="mozilla dinosaur head">
+            alt="Mozilla Dinosaur">
         </a>
-        <a href="https://addons.mozilla.org/">
+        <a href="https://addons.mozilla.org/"> <!-- FireFox add-ons -->
           <img 
             srcset="./images/firefoxaddons120.jpg 120w, ./images/firefoxaddons400.jpg 400w" 
             sizes="(max-width: 500px) 120px"
             src="./images/firefoxaddons400.jpg" 
-            alt="firefox add-ons">
+            alt="FireFox add-ons">
         </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img src="originals/mdn.svg" alt="dinosaur head">
+        <a href="https://developer.mozilla.org/en-US/"> <!-- MDN logo -->
+          <img src="originals/mdn.svg" alt="MDN logo">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <picture>
+        <picture> <!-- Red-panda responsive image -->
           <source srcset="./images/red-panda600.jpg" media="(max-width: 600px)">
           <img src="./images/red-panda1200.jpg" alt="a red panda">
         </picture> 
       </div>
-      
-
     </main>
   </body>
 </html>
