@@ -9,7 +9,7 @@ margin: 0;
 ul {
     background-color: #eeeeee;
     border: 5px solid purple;
-    padding: 10px 15px 15px 5px;
+    padding-block: 30px;
 }
 
 h1 {
