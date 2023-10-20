@@ -2,4 +2,39 @@ html {
   font-family: sans-serif;
 }
 
-/* Your CSS below here */
+/* box style */
+.box {
+  /* size setting */
+  width: 200px;
+  height: 170px;
+  margin: auto;
+
+
+  /* text style */
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  line-height: 170px;
+  text-align: center;
+
+  
+  /* border and shape adjustment */
+  border: 1px solid rgb(173, 15, 15);
+  border-radius: 30px;
+  
+  
+  /* background style */
+  background-color: red;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+
+  /* shadow setting */
+  box-shadow: 
+    inset -0.1em -0.1em 0.3em black,
+    inset 0.1em 0.1em 0.3em white,
+    0.3em 0.3em 1em black;
+}
