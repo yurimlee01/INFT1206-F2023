@@ -1,0 +1,162 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: "arvobold";
+  src: url('fonts/arvo-bold/arvo-bold-webfont.woff2') format('woff2'),
+       url('fonts/arvo-bold/arvo-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'source_sans_prosemibold';
+  src: url('fonts/sourcesanspro-semibold/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+       url('fonts/sourcesanspro-semibold/sourcesanspro-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: "arvobold";
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p, li{
+  font-family: "source_sans_prosemibold";
+  font-size: 15px;
+  line-height: 2em;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+h2 + p {
+  text-indent: 20px;
+}
+
+/* Links style */
+a {
+  outline: none;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 13px 13px;
+  padding-right: 15px;
+}
+
+a:link {
+  color: #a66;
+}
+
+a:visited {
+  color: rgb(83, 38, 38);
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  background-color: #a66;
+  color: white;
+}
+
+
+/* list setup */
+ul, ol {
+  margin: 2rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+/* box setup */
+nav ul {
+  padding-left: 0;
+  margin-top: 1rem 0;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 1px solid #a66;
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: rgb(114, 51, 51);
+  background: rgba(187, 111, 111, 0.76);
+  text-decoration: none;
+}
