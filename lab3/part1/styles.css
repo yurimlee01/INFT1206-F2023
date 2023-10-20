@@ -6,12 +6,14 @@ padding: 1em;
 margin: 0;
 }
 
+/* Contact info style */
 ul {
     background-color: #eeeeee;
     border: 5px solid purple;
     padding-block: 30px;
 }
 
+/* Heading1 style */
 h1 {
 color: hotpink;
 font-size: 2em;
@@ -20,6 +22,7 @@ border-bottom: 10px solid purple;
 border-bottom-style: dotted;
 }
 
+/* Heading2 style */
 h2 {
 font-style: italic;
 font-size: 1.5em;
@@ -30,6 +33,7 @@ color: #999999;
 font-weight: bold;
 }
 
+/* Links style */
 a:link,
 a:visited {
 color: #fb6542;
